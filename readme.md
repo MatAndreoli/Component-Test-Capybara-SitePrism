@@ -57,6 +57,19 @@ bundle install --full-index
 ```
 
 
+## SITE PRISM
+
+### Page Object Pattern
+
+https://medium.com/@SphereSoftware/page-object-pattern-in-ruby-with-siteprism-867c7e87939
+
+
+## CAPYBARA
+
+### DSL
+https://medium.com/testvagrant/web-testing-with-capybara-83b40e351d72
+
+
 
 ## CHALLENGES
 
