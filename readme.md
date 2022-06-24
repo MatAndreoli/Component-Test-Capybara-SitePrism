@@ -63,7 +63,34 @@ bundle install --full-index --binstubs
 ```
 
 
+
+## CAPYBARA
+
+O capybara é um Framework de testes de aceitação para aplicações web escrito na linguagem de programação ruby. Ele pode imitar ações de usuários reais que interagem com aplicativos baseados na web. É uma ótima ferramenta para utilizar em testes, automação, crawlers, robots, entre outras utilidades.
+
+Vantagens do capybara:
+
+- Curva de aprendizado: sua linguagem é simples e intuitiva;
+- Comunidade ativa: o que ajuda na busca por materiais na internet;
+- Testes de API: gem HTTParty;
+- Open source.
+
+### DOCUMENTATION
+
+https://rubydoc.info/github/jnicklas/capybara
+
+### DSL
+https://medium.com/testvagrant/web-testing-with-capybara-83b40e351d72
+
+
 ## SITE PRISM
+
+O que é o SitePrism?
+O SitePrism é uma DSL (Domain Specific Language) criada para facilitar a criação de page objects para testes automatizados em Ruby, utilizando o Capybara.
+
+O que são page objects?
+Page Objects são abstrações da interface do usuário que podem ser usadas nos testes automatizados. A maneira mais comum é modelar cada página como uma classe e usar instância dessa classe em seus testes.
+
 
 ### DOCUMENTATION
 
@@ -72,17 +99,6 @@ https://www.rubydoc.info/gems/site_prism/frames
 ### Page Object Pattern
 
 https://medium.com/@SphereSoftware/page-object-pattern-in-ruby-with-siteprism-867c7e87939
-
-
-## CAPYBARA
-
-
-### DOCUMENTATION
-
-https://rubydoc.info/github/jnicklas/capybara
-
-### DSL
-https://medium.com/testvagrant/web-testing-with-capybara-83b40e351d72
 
 
 
