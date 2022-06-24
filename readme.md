@@ -50,14 +50,24 @@ If you not authenticated on Nexus using bundle, do it:
 bundle config 10.129.178.173 yourVivoUser:password
 ```
 
+Install dev libs
+
+```shell
+bundle config set --local with development 
+```
+
 and then
 
 ```shell
-bundle install --full-index
+bundle install --full-index --binstubs 
 ```
 
 
 ## SITE PRISM
+
+### DOCUMENTATION
+
+https://www.rubydoc.info/gems/site_prism/frames
 
 ### Page Object Pattern
 
@@ -65,6 +75,11 @@ https://medium.com/@SphereSoftware/page-object-pattern-in-ruby-with-siteprism-86
 
 
 ## CAPYBARA
+
+
+### DOCUMENTATION
+
+https://rubydoc.info/github/jnicklas/capybara
 
 ### DSL
 https://medium.com/testvagrant/web-testing-with-capybara-83b40e351d72

@@ -10,7 +10,7 @@ require 'selenium-webdriver'
 
 Capybara.default_driver = :selenium
 Capybara.register_driver :selenium do |app|
-  Browsers.send("register_firefoxheadless", app)
+  Browsers.send("register_chrome", app)
 end
 
 Capybara.app_host = "https://www.google.com.br"

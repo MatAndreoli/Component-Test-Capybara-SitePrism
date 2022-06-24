@@ -10,3 +10,9 @@ gem 'capybara', '= 3.29.0'
 gem 'cucumber', '= 3.2.0'
 gem 'rubocop', '= 1.12'
 gem 'rubocop-ast', '= 1.14.0'
+gem 'rake', '= 12.3.3'
+
+group :development do
+  gem 'debase', require: false
+  gem 'ruby-debug-ide', require: false
+end 
