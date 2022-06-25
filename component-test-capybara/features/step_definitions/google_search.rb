@@ -4,18 +4,18 @@ Dado('que esteja na tela de busca') do
     @google_search_page.open_page?
 end
 
-Quando('fazer busca por {string}')  do |searchText|
-    puts('fazer busca por {string}')
+Quando('fazer busca por: {string}')  do |searchText|
+    @google_search_page.search(searchText)
 end
-
 
 E('clicar no botão pesquisa Google') do
-    puts('clicar no botão pesquisa Google')
+    @google_search_page.send
 end
 
-
-
-E('deve visualizar links de receita de {string}') do |searchText|
-    puts('deve visualizar links de receita de {string}')
+Então('devo visualizar um link com o titulo {string}') do |searchText|
+    assert_text @google_search_page, searchText
 end
 
+E('clicar no link com o titulo {string}') do |searchText|
+    @google_search_page.click_first_h3_title(searchText)
+end
