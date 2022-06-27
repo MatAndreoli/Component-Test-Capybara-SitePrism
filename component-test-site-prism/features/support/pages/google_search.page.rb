@@ -2,15 +2,11 @@ class GoogleSearchPage < SitePrism::Page
     set_url "/"
     element :search_input, 'input[name="q"]'
     element :search_button, 'input[name="btnK"]'
-    element :first_link, 'h3'
+    element :first_img_link, 'img[id=rimg_1]'
+    element :logo_tudo_gostoso, 'img[alt="TudoGostoso - Onde nascem todas as receitas"]'
 
     def open_page?
         wait_until_search_input_visible(wait: 15)
         wait_until_search_button_visible(wait: 15)
-    end
-
-    def get_first_link_text
-        # all('h3[class="LC20lb MBeuO DKV0Md"]').each { |name| puts name.text }
-        puts all('h3[class="LC20lb MBeuO DKV0Md"]')[0].text
     end
 end
