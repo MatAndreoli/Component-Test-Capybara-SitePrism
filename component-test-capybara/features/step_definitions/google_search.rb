@@ -16,6 +16,6 @@ Então('devo visualizar um link com o titulo {string}') do |searchText|
     assert_text @google_search_page, searchText
 end
 
-E('clicar no link com o titulo {string}') do |searchText|
-    @google_search_page.click_first_h3_title(searchText)
+E('clicar na primeira imagem') do
+    @google_search_page.click_first_img
 end

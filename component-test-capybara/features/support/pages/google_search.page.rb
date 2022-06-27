@@ -18,8 +18,7 @@ class GoogleSearchPage
         all('h3[class="LC20lb MBeuO DKV0Md"]')[0].text
     end
 
-    def click_first_h3_title(text)
-        click_on(text)
-        # all('h3[class="LC20lb MBeuO DKV0Md"]')[0].click() 
+    def click_first_img
+        find('img[id=rimg_1]').click
     end
 end
