@@ -8,7 +8,5 @@ Funcionalidade: Mecanismo de busca
     Dado que esteja na tela de busca
     Quando fazer busca por "pudim"
     E clicar no botão pesquisa Google
-    Então deve visualizar links de receita de "pudim"
-
-
-
+    Então devo visualizar um link com o titulo "Pudim de leite condensado - TudoGostoso"
+    E devo clicar no link com o titulo "Pudim de leite condensado - TudoGostoso"

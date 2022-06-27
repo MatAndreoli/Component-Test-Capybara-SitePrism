@@ -14,8 +14,13 @@ E('clicar no botão pesquisa Google') do
 end
 
 
+Então('devo visualizar um link com o titulo {string}') do |searchText|
+    # puts(@google_search_page.get_first_link_text)
+    @google_search_page.all('h3[class="LC20lb MBeuO DKV0Md"]').each { |link| assert_text link.text, searchText }
+    # assert_text @google_search_page, searchText
+end
 
-E('deve visualizar links de receita de {string}') do |searchText|
-    @google_search_page.get_first_link_text
-    # @google_search_page.all('h3[class="LC20lb MBeuO DKV0Md"]').each { |name| puts name.text }
+E('devo clicar no link com o titulo {string}') do |searchText|
+    @google_search_page.find('h3[class="LC20lb MBeuO DKV0Md"]').text eql searchText
+    # assert_text @google_search_page, searchText
 end
